@@ -2,8 +2,13 @@ name = "lean-webapp"
 version = "0.1.0"
 defaultTargets = ["lean-webapp"]
 
-[[lean_lib]]
-name = "LeanWebapp"
+[[require]]
+name = "html"
+git = "https://github.com/paulbutcher/lean-html"
+
+[[require]]
+name = "routing"
+git = "https://github.com/paulbutcher/lean-routing.git"
 
 [[lean_exe]]
 name = "lean-webapp"
