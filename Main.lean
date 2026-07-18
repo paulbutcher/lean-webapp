@@ -36,7 +36,7 @@ def app :=
   |> toHandler
 
 def main := Async.block do
-  let addr : Net.SocketAddress := .v4 ⟨.ofParts 127 0 0 1, 8080⟩
-  let server ← Server.serve addr app
-  IO.println s!"Listening on http://{addr}"
+  let addr := .v4 ⟨.ofParts 127 0 0 1, 0⟩
+  let server ← serve addr app
+  IO.println s!"Listening on http://{server.localAddr.get!}"
   server.waitShutdown
