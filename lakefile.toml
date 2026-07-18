@@ -1,0 +1,10 @@
+name = "lean-webapp"
+version = "0.1.0"
+defaultTargets = ["lean-webapp"]
+
+[[lean_lib]]
+name = "LeanWebapp"
+
+[[lean_exe]]
+name = "lean-webapp"
+root = "Main"
