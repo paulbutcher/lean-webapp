@@ -1,5 +1,7 @@
 # lean-webapp
 
+See: [Formally verified CRUD](https://paulbutcher.com/lean2.html)
+
 A minimal Lean 4 web application, demonstrating
 [lean-html](https://github.com/paulbutcher/lean-html) 
 and [lean-routing](https://github.com/paulbutcher/lean-routing).
